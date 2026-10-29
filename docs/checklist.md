@@ -1,6 +1,6 @@
 # Data Privacy Checklist
 
-*Print this page. Check off each item as you complete it.*
+*Print this page. Check off each item as you complete it. Designed to print on one or two sheets of paper.*
 
 ---
 
