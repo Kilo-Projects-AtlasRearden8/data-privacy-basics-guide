@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Privacy Checklist — Printable one-page checklist for protecting personal data online.">
+  <title>Data Privacy Checklist — Asdale Dynamics, LLC</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { font-size: 11pt; line-height: 1.4; }
+      .section { page-break-inside: avoid; }
+      .checklist-item { page-break-inside: avoid; }
+      a { text-decoration: none; color: inherit; }
+      .site-header, .site-footer { display: none; }
+    }
+    .checklist-item { display: flex; align-items: baseline; gap: 0.5rem; margin: 0.25rem 0; }
+    .checklist-item input[type="checkbox"] { width: 1.2rem; height: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .checklist-group { margin-bottom: 1rem; }
+    .checklist-group h3 { margin-bottom: 0.5rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+    .emergency { background: #fff3cd; border: 1px solid #ffc107; padding: 1rem; border-radius: 4px; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header no-print">
+    <div class="container">
+      <h1>Data Privacy Checklist</h1>
+      <p class="subtitle">Print this page. Check off each item as you complete it.</p>
+      <p class="credit">Published by <strong>Asdale Dynamics, LLC</strong> — October 2026</p>
+    </div>
+  </header>
+
+  <nav class="toc no-print" aria-label="Navigation">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Manual</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="checklist-group">
+        <h3>🔐 Passwords & Password Manager</h3>
+        <label class="checklist-item"><input type="checkbox"> Install password manager (Bitwarden recommended)</label>
+        <label class="checklist-item"><input type="checkbox"> Create strong master password (4–6 random words + number + symbol)</label>
+        <label class="checklist-item"><input type="checkbox"> Save master password in safe place (not digital)</label>
+        <label class="checklist-item"><input type="checkbox"> Install browser extension + mobile app</label>
+        <label class="checklist-item"><input type="checkbox"> Import existing passwords from browser</label>
+        <label class="checklist-item"><input type="checkbox"> Generate new unique passwords for important accounts</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on password manager itself</label>
+        <label class="checklist-item"><input type="checkbox"> Back up recovery kit / emergency sheet</label>
+      </div>
+
+      <div class="checklist-group">
+        <h3>🔑 Two-Factor Authentication (2FA)</h3>
+        <label class="checklist-item"><input type="checkbox"> Install authenticator app (Authy, Google Authenticator, or Bitwarden Premium)</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>email</strong> (highest priority)</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>password manager</strong></label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>banking/financial</strong> accounts</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>social media</strong> accounts</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>shopping</strong> accounts (Amazon, etc.)</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>cloud storage</strong> (Google Drive, Dropbox, etc.)</label>
+        <label class="checklist-item"><input type="checkbox"> Enable 2FA on <strong>work</strong> accounts (GitHub, Slack, etc.)</label>
+        <label class="checklist-item"><input type="checkbox"> Save backup codes for each account (in password manager)</label>
+        <label class="checklist-item"><input type="checkbox"> Avoid SMS 2FA where authenticator app option exists</label>
+      </div>
+
+      <div class="checklist-group">
+        <h3>🌐 Browser Privacy</h3>
+        <label class="checklist-item"><input type="checkbox"> Switch to privacy browser (Firefox or Brave recommended)</label>
+        <label class="checklist-item"><input type="checkbox"> Install uBlock Origin</label>
+        <label class="checklist-item"><input type="checkbox"> Install Privacy Badger</label>
+        <label class="checklist-item"><input type="checkbox"> Install Cookie AutoDelete</label>
+        <label class="checklist-item"><input type="checkbox"> Block third-party cookies</label>
+        <label class="checklist-item"><input type="checkbox"> Enable "Do Not Track"</label>
+        <label class="checklist-item"><input type="checkbox"> Enable DNS over HTTPS (Cloudflare or NextDNS)</label>
+        <label class="checklist-item"><input type="checkbox"> Set private search engine (DuckDuckGo or Startpage)</label>
+        <label class="checklist-item"><input type="checkbox"> Clear browsing data on close (optional)</label>
+      </div>
+
+      <div class="checklist-group">
+        <h3>📱 App Permissions</h3>
+        <label class="checklist-item"><input type="checkbox"> <strong>iOS:</strong> Settings → Privacy & Security → review each category</label>
+        <label class="checklist-item"><input type="checkbox"> <strong>Android:</strong> Settings → Privacy → Permission Manager → review each</label>
+        <label class="checklist-item"><input type="checkbox"> Set Location to "While Using" not "Always" where possible</label>
+        <label class="checklist-item"><input type="checkbox"> Revoke Contacts, Microphone, Camera from apps that don't need them</label>
+        <label class="checklist-item"><input type="checkbox"> Disable "Allow Apps to Request to Track" (iOS)</label>
+        <label class="checklist-item"><input type="checkbox"> Delete unused apps</label>
+        <label class="checklist-item"><input type="checkbox"> Review browser site permissions (Location, Camera, Mic, Notifications)</label>
+      </div>
+
+      <div class="checklist-group">
+        <h3>🗑️ Data Deletion Requests</h3>
+        <label class="checklist-item"><input type="checkbox"> List accounts you no longer use</label>
+        <label class="checklist-item"><input type="checkbox"> Submit deletion request to 3+ data brokers (Whitepages, Spokeo, BeenVerified, etc.)</label>
+        <label class="checklist-item"><input type="checkbox"> Submit deletion request to old services you quit</label>
+        <label class="checklist-item"><input type="checkbox"> Save confirmation emails</label>
+        <label class="checklist-item"><input type="checkbox"> Follow up if no response in 2–3 weeks</label>
+        <label class="checklist-item"><input type="checkbox"> Consider paid service (DeleteMe, Incogni) for ongoing broker removal</label>
+      </div>
+
+      <div class="checklist-group">
+        <h3>🤖 AI Privacy</h3>
+        <label class="checklist-item"><input type="checkbox"> Never paste passwords, API keys, or secrets into AI chat</label>
+        <label class="checklist-item"><input type="checkbox"> Never share SSN, passport, financial, or health data with AI</label>
+        <label class="checklist-item"><input type="checkbox"> Never share work confidential info / customer data with AI</label>
+        <label class="checklist-item"><input type="checkbox"> Disable "improve model" / training in ChatGPT settings</label>
+        <label class="checklist-item"><input type="checkbox"> Use local models (Ollama, LM Studio) for sensitive work</label>
+        <label class="checklist-item"><input type="checkbox"> Redact sensitive values before pasting code/text to AI</label>
+      </div>
+
+      <div class="checklist-group">
+        <h3>🔄 Quarterly Maintenance</h3>
+        <label class="checklist-item"><input type="checkbox"> Review password manager for weak/reused passwords</label>
+        <label class="checklist-item"><input type="checkbox"> Check 2FA is still enabled on critical accounts</label>
+        <label class="checklist-item"><input type="checkbox"> Audit phone/app permissions</label>
+        <label class="checklist-item"><input type="checkbox"> Clear browser data</label>
+        <label class="checklist-item"><input type="checkbox"> Check for new data broker listings (search your name)</label>
+        <label class="checklist-item"><input type="checkbox"> Update this checklist</label>
+      </div>
+    </section>
+
+    <section class="emergency">
+      <h3>🚨 Emergency: If You're Breached</h3>
+      <ol>
+        <li><strong>Change password</strong> immediately on breached site + anywhere you reused it</li>
+        <li><strong>Enable 2FA</strong> if not already on</li>
+        <li><strong>Check <a href="https://haveibeenpwned.com" target="_blank" rel="noopener">haveibeenpwned.com</a></strong> for your email</li>
+        <li><strong>Freeze credit</strong> (US: Equifax, Experian, TransUnion) if SSN exposed</li>
+        <li><strong>Monitor accounts</strong> for suspicious activity</li>
+        <li><strong>Report identity theft</strong> at <a href="https://identitytheft.gov" target="_blank" rel="noopener">identitytheft.gov</a> (US)</li>
+      </ol>
+    </section>
+
+    <p class="credit" style="margin-top: 2rem; text-align: center;">
+      Copyright (c) 2026 Asdale Dynamics, LLC. Licensed under MIT.<br>
+      Full manual: <code>docs/index.md</code> or <a href="index.html">site/index.html</a><br>
+      Asdale Dynamics — <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">https://dylanasdale.github.io</a>
+    </p>
+  </main>
+
+  <footer class="site-footer no-print">
+    <div class="container">
+      <p>Data Privacy Checklist — <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">Asdale Dynamics, LLC</a> — MIT License</p>
+    </div>
+  </footer>
+
+  <script class="no-print">
+    // Save checkbox state to localStorage
+    document.querySelectorAll('input[type="checkbox"]').forEach((cb, i) => {
+      const key = 'checklist-' + i;
+      if (localStorage.getItem(key) === 'true') cb.checked = true;
+      cb.addEventListener('change', () => localStorage.setItem(key, cb.checked));
+    });
+  </script>
+</body>
+</html>

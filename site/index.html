@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Privacy Basics — A beginner's manual for protecting personal data online. Passwords, 2FA, browser privacy, app permissions, data deletion, and AI privacy.">
+  <title>Data Privacy Basics — Asdale Dynamics, LLC</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Data Privacy Basics</h1>
+      <p class="subtitle">A beginner's manual for protecting your personal data online</p>
+      <p class="credit">Published by <strong>Asdale Dynamics, LLC</strong> — October 2026</p>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of Contents">
+    <div class="container">
+      <ul>
+        <li><a href="#passwords">1. Passwords & Password Managers</a></li>
+        <li><a href="#2fa">2. Two-Factor Authentication (2FA)</a></li>
+        <li><a href="#browser">3. Browser Privacy</a></li>
+        <li><a href="#apps">4. App Permissions</a></li>
+        <li><a href="#deletion">5. Data Deletion Requests</a></li>
+        <li><a href="#ai">6. What Never to Share with AI</a></li>
+        <li><a href="checklist.html">7. Printable Checklist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="intro" class="section">
+      <h2>Welcome</h2>
+      <p>This manual walks you through practical steps to protect your personal data online. No jargon, no scare tactics — just clear actions you can take today.</p>
+      <p><strong>Who this is for:</strong> Anyone who uses the internet and wants more control over their data. No technical background needed.</p>
+      <p><strong>Time to complete:</strong> Read the whole thing in 30 minutes. Implement at your own pace.</p>
+    </section>
+
+    <section id="passwords" class="section">
+      <h2>1. Passwords & Password Managers</h2>
+
+      <h3>The Problem</h3>
+      <p>Most people reuse passwords. If one site gets breached, attackers try that password everywhere else.</p>
+
+      <h3>The Solution: Use a Password Manager</h3>
+      <p>A password manager creates and stores unique, strong passwords for every site. You only remember one master password.</p>
+
+      <h3>Recommended Password Managers (Free Tiers Available)</h3>
+      <ul class="recommendations">
+        <li><strong>Bitwarden</strong> — open source, cross-platform, highly recommended</li>
+        <li><strong>1Password</strong> — polished, family sharing, paid only</li>
+        <li><strong>KeePassXC</strong> — offline, local file, advanced users</li>
+        <li><strong>Apple iCloud Keychain / Google Password Manager</strong> — built in, convenient</li>
+      </ul>
+
+      <h3>Step-by-Step: Set Up Bitwarden (Free, Recommended)</h3>
+      <ol class="steps">
+        <li><strong>Go to</strong> <a href="https://bitwarden.com" target="_blank" rel="noopener">bitwarden.com</a> or search "Bitwarden" in your app store</li>
+        <li><strong>Create account</strong> — use a strong master password (see below)</li>
+        <li><strong>Install browser extension</strong> — Chrome, Firefox, Safari, Edge all supported</li>
+        <li><strong>Install mobile app</strong> — iOS App Store or Google Play</li>
+        <li><strong>Import existing passwords</strong> — most browsers let you export a CSV file</li>
+        <li><strong>Start using it</strong> — when you log in somewhere, Bitwarden offers to save it. When you create a new account, Bitwarden generates a password.</li>
+      </ol>
+
+      <h3>Creating a Strong Master Password</h3>
+      <p>Your master password unlocks everything. Make it memorable but unguessable.</p>
+      
+      <h4>Method: Passphrase (Recommended)</h4>
+      <p>Pick 4–6 random words. Add a number and symbol.</p>
+      <pre><code>correct-horse-battery-staple-42!</code></pre>
+      <p><strong>Why this works:</strong> Length beats complexity. A 4-word passphrase takes centuries to crack.</p>
+
+      <h4>Never Use:</h4>
+      <ul>
+        <li>Personal info (birthdays, names, pet names)</li>
+        <li>Common patterns (Password123, qwerty, abc123)</li>
+        <li>The same password you use anywhere else</li>
+      </ul>
+
+      <h3>Quick Password Rules</h3>
+      <table>
+        <thead>
+          <tr><th>Do</th><th>Don't</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Use unique password per site</td><td>Reuse passwords</td></tr>
+          <tr><td>Let password manager generate 20+ char passwords</td><td>Make up your own "clever" passwords</td></tr>
+          <tr><td>Enable 2FA on your password manager</td><td>Share master password with anyone</td></tr>
+          <tr><td>Back up your recovery kit (Bitwarden gives you one)</td><td>Lose your recovery kit</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="2fa" class="section">
+      <h2>2. Two-Factor Authentication (2FA)</h2>
+
+      <h3>What is 2FA?</h3>
+      <p>A second check after your password. Even if someone steals your password, they can't log in without the second factor.</p>
+
+      <h3>Types of 2FA (Best to Worst)</h3>
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Example</th><th>Security</th><th>Convenience</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Hardware key</strong></td><td>YubiKey, Titan Key</td><td>⭐⭐⭐⭐⭐</td><td>Medium</td></tr>
+          <tr><td><strong>Authenticator app</strong></td><td>Bitwarden, Authy, Google Authenticator, Microsoft Authenticator</td><td>⭐⭐⭐⭐</td><td>High</td></tr>
+          <tr><td><strong>SMS / text message</strong></td><td>Code sent to phone</td><td>⭐⭐</td><td>High</td></tr>
+          <tr><td><strong>Email code</strong></td><td>Code sent to email</td><td>⭐⭐</td><td>High</td></tr>
+        </tbody>
+      </table>
+      <p class="note"><strong>Avoid SMS if possible</strong> — SIM swap attacks can intercept texts.</p>
+
+      <h3>Step-by-Step: Set Up Authenticator App 2FA</h3>
+      <ol class="steps">
+        <li><strong>Install an authenticator app</strong> — Bitwarden has this built in (premium), or use Authy (free, syncs across devices), Google Authenticator, or Microsoft Authenticator</li>
+        <li><strong>Go to account security settings</strong> on each site (Google, Facebook, bank, email, GitHub, etc.)</li>
+        <li><strong>Find "Two-Factor Authentication" or "2FA"</strong> — usually under Security or Login settings</li>
+        <li><strong>Choose "Authenticator App"</strong> — not SMS</li>
+        <li><strong>Scan the QR code</strong> with your authenticator app</li>
+        <li><strong>Enter the 6-digit code</strong> from the app to confirm</li>
+        <li><strong>Save backup codes</strong> — print or save to password manager. These let you in if you lose your phone.</li>
+      </ol>
+
+      <h3>Priority Order: Enable 2FA Here First</h3>
+      <ol>
+        <li><strong>Email</strong> (Gmail, Outlook, Proton, etc.) — gateway to everything else</li>
+        <li><strong>Password manager</strong> — Bitwarden, 1Password, etc.</li>
+        <li><strong>Banking & financial</strong> — banks, PayPal, Venmo, investment accounts</li>
+        <li><strong>Social media</strong> — Facebook, Instagram, Twitter/X, LinkedIn</li>
+        <li><strong>Shopping</strong> — Amazon, eBay, anywhere with saved payment info</li>
+        <li><strong>Cloud storage</strong> — Google Drive, Dropbox, iCloud, OneDrive</li>
+        <li><strong>Work accounts</strong> — GitHub, Slack, Microsoft 365, etc.</li>
+      </ol>
+    </section>
+
+    <section id="browser" class="section">
+      <h2>3. Browser Privacy</h2>
+
+      <h3>Why Browsers Leak Data</h3>
+      <p>Browsers send your IP address, location, browsing history, and device info to websites by default. Trackers follow you across sites.</p>
+
+      <h3>Quick Wins (Do These Today)</h3>
+
+      <h4>Switch to a Privacy-Focused Browser</h4>
+      <table>
+        <thead>
+          <tr><th>Browser</th><th>Best For</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Firefox</strong></td><td>Most people</td><td>Open source, strong privacy defaults, great extensions</td></tr>
+          <tr><td><strong>Brave</strong></td><td>Set-and-forget</td><td>Blocks ads/trackers by default, Chromium-based</td></tr>
+          <tr><td><strong>Safari</strong></td><td>Mac/iPhone users</td><td>Good privacy, built-in</td></tr>
+          <tr><td><strong>Tor Browser</strong></td><td>Maximum anonymity</td><td>Slow, for sensitive browsing only</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Essential Browser Settings (Firefox Example)</h4>
+      <ol class="steps">
+        <li><strong>Block third-party cookies</strong> — Settings → Privacy & Security → Cookies → "Block third-party cookies"</li>
+        <li><strong>Enable "Do Not Track"</strong> — Settings → Privacy & Security → Send "Do Not Track" signal → Always</li>
+        <li><strong>Use DNS over HTTPS (DoH)</strong> — Settings → General → Network Settings → Settings → Enable DNS over HTTPS → Cloudflare or NextDNS</li>
+        <li><strong>Clear cookies on close (optional but strong)</strong> — Settings → Privacy & Security → Cookies → "Delete cookies and site data when Firefox closes"</li>
+      </ol>
+
+      <h4>Install These Extensions</h4>
+      <table>
+        <thead>
+          <tr><th>Extension</th><th>What It Does</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>uBlock Origin</strong></td><td>Blocks ads, trackers, malware — the single best extension</td></tr>
+          <tr><td><strong>Privacy Badger</strong></td><td>Learns and blocks invisible trackers automatically</td></tr>
+          <tr><td><strong>HTTPS Everywhere</strong></td><td>Forces encrypted connections (built into modern browsers now)</td></tr>
+          <tr><td><strong>Cookie AutoDelete</strong></td><td>Removes cookies when you close a tab</td></tr>
+          <tr><td><strong>Decentraleyes</strong></td><td>Blocks requests to CDN trackers</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Search Privately</h4>
+      <ul>
+        <li><strong>DuckDuckGo</strong> — no tracking, good results</li>
+        <li><strong>Startpage</strong> — Google results without tracking</li>
+        <li><strong>Brave Search</strong> — independent index, no tracking</li>
+      </ul>
+    </section>
+
+    <section id="apps" class="section">
+      <h2>4. App Permissions</h2>
+
+      <h3>The Problem</h3>
+      <p>Apps ask for more permissions than they need. A flashlight app doesn't need your contacts or location.</p>
+
+      <h3>Rule of Thumb: Minimum Necessary</h3>
+      <p>Only grant permissions the app genuinely needs to function.</p>
+
+      <h3>Phone: Audit Your Permissions</h3>
+
+      <h4>iOS (iPhone/iPad)</h4>
+      <ol class="steps">
+        <li>Settings → Privacy & Security</li>
+        <li>Tap each category (Location, Contacts, Photos, Microphone, Camera, etc.)</li>
+        <li>Review each app — change to "Never" or "Ask Next Time" if not needed</li>
+        <li>Location Services → Set apps to "While Using" instead of "Always" when possible</li>
+      </ol>
+
+      <h4>Android</h4>
+      <ol class="steps">
+        <li>Settings → Privacy → Permission Manager (or Settings → Apps → Permissions)</li>
+        <li>Tap each permission → review apps</li>
+        <li>Change to "Don't allow" or "Allow only while using" as appropriate</li>
+      </ol>
+
+      <h3>Common Permissions to Question</h3>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Legitimate Uses</th><th>Often Abused By</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Location</td><td>Maps, ride-share, weather</td><td>Games, social media, shopping apps</td></tr>
+          <tr><td>Contacts</td><td>Messaging, email</td><td>Games, random utilities</td></tr>
+          <tr><td>Microphone</td><td>Voice calls, voice memos</td><td>Apps that don't record audio</td></tr>
+          <tr><td>Camera</td><td>Video calls, scanning</td><td>Apps with no camera feature</td></tr>
+          <tr><td>Photos/Files</td><td>Photo editors, cloud backup</td><td>Apps that don't manage media</td></tr>
+          <tr><td>Tracking (iOS)</td><td>Almost never needed</td><td>Ad networks, analytics</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Desktop: Browser Permissions</h3>
+      <p>Settings → Site Settings (Chrome/Edge/Brave) or Settings → Privacy & Security → Permissions (Firefox)</p>
+      <p>Review: Location, Camera, Microphone, Notifications. Block by default, allow per-site when needed.</p>
+
+      <h3>Delete Unused Apps</h3>
+      <p>Apps you don't use still collect data. Delete them.</p>
+    </section>
+
+    <section id="deletion" class="section">
+      <h2>5. Data Deletion Requests</h2>
+
+      <h3>Your Rights</h3>
+      <ul>
+        <li><strong>GDPR (EU/UK)</strong> — "Right to erasure" / "Right to be forgotten"</li>
+        <li><strong>CCPA/CPRA (California)</strong> — Right to delete</li>
+        <li><strong>Other states</strong> — Virginia, Colorado, Connecticut, Utah, and more have similar laws</li>
+        <li><strong>Many companies honor globally</strong> — even if not legally required</li>
+      </ul>
+
+      <h3>Step-by-Step: Request Data Deletion</h3>
+
+      <h4>1. Find the Right Contact</h4>
+      <ul>
+        <li>Check the site's <strong>Privacy Policy</strong> — look for "Your Rights," "Data Subject Requests," or "Contact Us"</li>
+        <li>Search: "[Company name] data deletion request" or "[Company name] privacy contact"</li>
+        <li>Common emails: <code>privacy@</code>, <code>dpo@</code>, <code>gdpr@</code>, <code>ccpa@</code>, <code>legal@</code></li>
+      </ul>
+
+      <h4>2. Use a Template</h4>
+      <pre><code>Subject: Data Deletion Request — [Your Name]
+
+To the Data Protection Officer / Privacy Team,
+
+I hereby request deletion of all personal data you hold about me under [GDPR Article 17 / CCPA Section 1798.105 / applicable law].
+
+Account details:
+- Name: [Your full name]
+- Email: [Email used for account]
+- Username: [If applicable]
+- Account ID: [If known]
+
+Please confirm:
+1. Receipt of this request
+2. Deletion completion timeline
+3. What data has been deleted
+4. Whether any data is retained and the legal basis
+
+I expect a response within [30 days GDPR / 45 days CCPA] as required by law.
+
+Thank you,
+[Your Name]</code></pre>
+
+      <h4>3. Send and Track</h4>
+      <ul>
+        <li>Send from the email on the account</li>
+        <li>Save sent email and any replies</li>
+        <li>Follow up if no response in 2–3 weeks</li>
+      </ul>
+
+      <h4>4. Use Automated Tools (Optional)</h4>
+      <ul>
+        <li><strong>DeleteMe</strong> / <strong>OneRep</strong> / <strong>Incogni</strong> — paid services that automate requests to data brokers</li>
+        <li><strong>Privacy.com</strong> — virtual cards, not deletion but reduces data spread</li>
+        <li><strong>SimpleLogin</strong> / <strong>AnonAddy</strong> — email aliases to limit exposure</li>
+      </ul>
+
+      <h3>Data Brokers to Target First</h3>
+      <p>These companies sell your data. Opt out at each:</p>
+      <p>Whitepages, Spokeo, BeenVerified, PeopleFinders, Intelius, MyLife, Radaris, TruePeopleSearch, FastPeopleSearch, FamilyTreeNow</p>
+    </section>
+
+    <section id="ai" class="section">
+      <h2>6. What Never to Share with AI</h2>
+
+      <h3>The Rule</h3>
+      <p class="note"><strong>Assume anything you type into an AI chat can be seen by the company that runs it, used for training, or leaked in a breach.</strong></p>
+
+      <h3>Never Share with AI</h3>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Examples</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Credentials</strong></td><td>Passwords, API keys, tokens, SSH keys, database URLs, encryption keys</td></tr>
+          <tr><td><strong>Personal ID</strong></td><td>SSN, passport number, driver's license, medical record numbers</td></tr>
+          <tr><td><strong>Financial</strong></td><td>Credit card numbers, bank account numbers, routing numbers, crypto seed phrases</td></tr>
+          <tr><td><strong>Health</strong></td><td>Diagnoses, medications, insurance IDs, therapy notes, genetic data</td></tr>
+          <tr><td><strong>Legal</strong></td><td>Contracts under NDA, privileged communications, case details</td></tr>
+          <tr><td><strong>Work secrets</strong></td><td>Unreleased product info, source code (if proprietary), internal docs, customer data</td></tr>
+          <tr><td><strong>Other people's private info</strong></td><td>Anyone's PII without their consent</td></tr>
+          <tr><td><strong>Anything you'd regret public</strong></td><td>If you wouldn't post it on a billboard, don't put it in AI</td></tr>
+        </tbody>
+      </table>
+
+      <h3>What's Generally Okay to Share</h3>
+      <ul>
+        <li>General questions ("How do I reset a password?")</li>
+        <li>Public information (Wikipedia facts, public docs)</li>
+        <li>Anonymized examples ("I have a CSV with columns A, B, C — how do I parse it?")</li>
+        <li>Code you wrote for learning/open source (no secrets)</li>
+        <li>Creative writing, brainstorming, learning</li>
+      </ul>
+
+      <h3>Safer AI Practices</h3>
+      <ul>
+        <li><strong>Use local models</strong> (Ollama, LM Studio, GPT4All) for sensitive work — data stays on your machine</li>
+        <li><strong>Disable chat history / training</strong> — ChatGPT: Settings → Data Controls → "Improve the model for everyone" OFF. Claude: automatically doesn't train on your chats. Gemini: Activity → Turn off.</li>
+        <li><strong>Use "incognito" / temporary chats</strong> when available</li>
+        <li><strong>Redact before pasting</strong> — replace real values with <code>REDACTED</code> or <code>example.com</code></li>
+      </ul>
+    </section>
+
+    <section id="next-steps" class="section">
+      <h2>Next Steps</h2>
+      <ol>
+        <li><strong>This week:</strong> Set up password manager + enable 2FA on email and password manager</li>
+        <li><strong>This month:</strong> Audit browser, phone permissions, request deletion from 3 data brokers</li>
+        <li><strong>Ongoing:</strong> Use email aliases for new signups, review permissions quarterly</li>
+      </ol>
+    </section>
+
+    <section id="resources" class="section">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://bitwarden.com" target="_blank" rel="noopener">Bitwarden</a></li>
+        <li><a href="https://authy.com" target="_blank" rel="noopener">Authy</a></li>
+        <li><a href="https://ublockorigin.com" target="_blank" rel="noopener">uBlock Origin</a></li>
+        <li><a href="https://duckduckgo.com" target="_blank" rel="noopener">DuckDuckGo</a></li>
+        <li><a href="https://gdpr.eu" target="_blank" rel="noopener">GDPR.eu</a></li>
+        <li><a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener">CCPA Guide</a></li>
+        <li><a href="https://privacyguides.org" target="_blank" rel="noopener">Privacy Guides</a></li>
+        <li><a href="https://dylanasdale.github.io" target="_blank" rel="noopener">Asdale Dynamics</a></li>
+      </ul>
+    </section>
+
+    <section id="disclaimer" class="section disclaimer">
+      <p><strong>This manual is educational only.</strong> Not legal, medical, or security advice. For high-stakes accounts, consult a professional.</p>
+      <p>Copyright (c) 2026 Asdale Dynamics, LLC. Licensed under MIT — see <a href="../LICENSE">LICENSE</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Data Privacy Basics — <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">Asdale Dynamics, LLC</a> — MIT License</p>
+    </div>
+  </footer>
+</body>
+</html>
